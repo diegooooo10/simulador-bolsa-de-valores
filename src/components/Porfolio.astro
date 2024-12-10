@@ -1,30 +1,32 @@
 ---
-import { Pig, TrendingUp, Wallet } from "./svg";
+import { Pig, ReturnArrow, TrendingUp2, Wallet } from "./svg";
 ---
-
-<section class=" flex flex-col items-center text-left">
-  <article>
-    <div class=" flex">
-      <Wallet/>
-      <p>Saldo disponible</p>
-
+<a href="/">
+  <ReturnArrow />
+</a>
+<h1 class="text-center text-3xl font-bold my-6">Bolsa</h1>
+<section
+  class=" mx-auto space-y-5 rounded-md grid p-5 md:grid-cols-3  md:space-x-5 md:space-y-0 text-left"
+>
+  <article class="bg-blue-50 rounded-md w-full p-5 shadow-md">
+    <div class="flex text-gray-600 font-semibold">
+      <Wallet />
+      <p class="text-sm">Saldo disponible</p>
     </div>
-    <p>$15,000.00</p>
+    <p class="text-blue-600 font-bold text-2xl">$15,000.00</p>
   </article>
-  <article>
-    <div class=" flex">
-
-      <Pig/>
-      <p>Valor de la cartera</p>
+  <article class="bg-green-50 md:w-auto w-full rounded-md p-5 shadow-md">
+    <div class="flex text-gray-600 font-semibold">
+      <Pig />
+      <p class="text-sm">Valor de la cartera</p>
     </div>
-    <p>$15,000.00</p>
+    <p class="text-green-600 font-bold text-2xl">$15,000.00</p>
   </article>
-  <article>
-    <div class=" flex">
-
-      <TrendingUp/>
-    <p>Beneficio total</p>
+  <article class="bg-purple-50 rounded-md p-5 w-full shadow-md">
+    <div class="flex text-gray-600 font-semibold">
+      <TrendingUp2 />
+      <p class="text-sm">Beneficio total</p>
     </div>
-  <p>$15,000.00</p>
+    <p class="text-purple-600 font-bold text-2xl">$15,000.00</p>
   </article>
 </section>

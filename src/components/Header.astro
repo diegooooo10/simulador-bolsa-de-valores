@@ -1,0 +1,25 @@
+---
+import { Cash } from "../components/svg";
+
+const date = new Date();
+const userBalance = 31297;
+---
+<div class="flex w-full justify-between items-center">
+  <div class="flex md:flex-row flex-col">
+    <Cash />
+    <h1 class="text-2xl font-bold">Stock Market</h1>
+  </div>
+  <div class="space-y-1 text-right">
+    <div class="text-right">
+      <a href="/profile">Cuenta</a>
+    </div>
+    <div class="text-right md:flex grid space-x-1">
+      <p>Dinero total:</p>
+      <p>${userBalance}</p>
+    </div>
+    <div class="flex md:flex-row text-right flex-col space-x-1">
+      <p class="text-gray-400 text-sm">Última actualización:</p>
+      <p class="text-gray-400 text-sm">{date.toLocaleString()}</p>
+    </div>
+  </div>
+</div>
