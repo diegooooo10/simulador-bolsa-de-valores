@@ -1,0 +1,46 @@
+---
+import { Change } from "../services/Change";
+interface Props {
+  symbol: string;
+  name: string;
+  price: number;
+  change: number;
+  volume: number;
+  marketCap: string;
+}
+const { symbol, name, price, volume, change, marketCap } = Astro.props;
+---
+
+<tr class="border-y border-gray-500">
+  <td class="flex flex-col justify-center text-left py-3 px-6">
+    <span class="font-bold text-white">
+      {symbol}
+    </span>
+    <span class="text-gray-400">
+      {name}
+    </span>
+  </td>
+  <td class="text-gray-300">${price}</td>
+  <td>
+    
+    <Change change={change}/>
+  </td>
+  <td class="text-gray-300">${volume}</td>
+  <td class="text-gray-300">{marketCap}</td>
+  <td class="py-3 px-6">
+    <input
+      type="number"
+      class="border-gray-600 border rounded-lg bg-gray-700 text-white py-1 px-2 w-28 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      placeholder="Qty"
+    />
+  </td>
+  <td class="py-3 flex justify-center space-x-2">
+    <button
+      class="bg-blue-500 text-white px-5 py-2 rounded-lg hover:bg-blue-600"
+      >Comprar</button
+    >
+    <button class="bg-red-500 text-white px-5 py-2 rounded-lg hover:bg-red-600"
+      >Vender</button
+    >
+  </td>
+</tr>

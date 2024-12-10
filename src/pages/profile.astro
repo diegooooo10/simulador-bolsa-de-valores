@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Portfolio from "../components/Porfolio.astro";
+import TransactionHistory from "../components/TransactionHistory.astro";
+
+let userBalance = 10000;
+let portfolio: never[] = [];
+let transactions: never[] = [];
+---
+
+<Layout pageTitle="Simulador de Bolsa de Valores">
+  <h1 class="text-center text-3xl font-bold my-6">Simulador de Bolsa</h1>
+  
+    <Portfolio portfolio={portfolio} userBalance={userBalance} />
+    <TransactionHistory transactions={transactions} />
+  </div>
+</Layout>
