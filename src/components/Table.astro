@@ -22,7 +22,7 @@ const { symbol, name, price, volume, change, marketCap } = Astro.props;
   </td>
   <td class="text-gray-300">${price}</td>
   <td>
-    <Change change={change}/>
+    <Change change={change} client:load/>
   </td>
   <td class="text-gray-300">${volume}</td>
   <td class="text-gray-300">{marketCap}</td>

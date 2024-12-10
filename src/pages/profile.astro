@@ -2,13 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import Portfolio from "../components/Porfolio.astro";
 import TransactionHistory from "../components/TransactionHistory.astro";
+import { ReturnArrow } from "../services/svg";
 let userBalance = 10000;
 let portfolio: never[] = [];
 let transactions: never[] = [];
 ---
 
 <Layout pageTitle="Simulador de Bolsa de Valores">
-  <main class="p-5 space-y-10 max-w-7xl mx-auto">
+  <a href="/">
+    <ReturnArrow client:visible/>
+  </a>
+  <main class="md:p-5 p-2 space-y-10 max-w-7xl mx-auto">
     <Portfolio portfolio={portfolio} userBalance={userBalance} />
     <TransactionHistory transactions={transactions} />
   </main>

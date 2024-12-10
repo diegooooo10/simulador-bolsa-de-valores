@@ -1,30 +1,29 @@
 ---
-import { Pig, ReturnArrow, TrendingUp2, Wallet } from "../services/svg";
+import { Pig, TrendingUp2, Wallet } from "../services/svg";
 ---
-<a href="/">
-  <ReturnArrow />
-</a>
+
+
 <h1 class="text-center text-3xl font-bold my-6">Bolsa</h1>
 <section
-  class=" mx-auto space-y-5 rounded-md grid p-5 md:grid-cols-3  md:space-x-5 md:space-y-0 text-left"
+  class="mx-auto space-y-5 rounded-md grid p-5 md:grid-cols-3  md:space-y-0 text-left"
 >
   <article class="bg-blue-50 rounded-md w-full p-5 shadow-md">
     <div class="flex text-gray-600 font-semibold">
-      <Wallet />
+      <Wallet client:visible />
       <p class="text-sm">Saldo disponible</p>
     </div>
     <p class="text-blue-600 font-bold text-2xl">$15,000.00</p>
   </article>
-  <article class="bg-green-50 md:w-auto w-full rounded-md p-5 shadow-md">
+  <article class="bg-green-50 md:w-auto w-full rounded-md p-5 shadow-md md:mx-5">
     <div class="flex text-gray-600 font-semibold">
-      <Pig />
+      <Pig  client:visible/>
       <p class="text-sm">Valor de la cartera</p>
     </div>
     <p class="text-green-600 font-bold text-2xl">$15,000.00</p>
   </article>
-  <article class="bg-purple-50 rounded-md p-5 w-full shadow-md">
+  <article class="bg-purple-50 rounded-md p-5 w-full shadow-md ">
     <div class="flex text-gray-600 font-semibold">
-      <TrendingUp2 />
+      <TrendingUp2 client:visible/>
       <p class="text-sm">Beneficio total</p>
     </div>
     <p class="text-purple-600 font-bold text-2xl">$15,000.00</p>

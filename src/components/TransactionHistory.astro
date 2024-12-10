@@ -1,26 +1,32 @@
 ---
+import { BuyDate } from "../services/TIempo";
+
 const date = new Date();
 ---
 
-<article class="overflow-x-auto">
-  <table class="bg-gray-700 w-full text-center table-auto overflow-x-scroll">
-    <thead>
-      <tr class="bg-gray-700 text-center text-gray-400 uppercase text-sm">
-        <th class="py-3 px-6 text-left">Tipo</th>
-        <th class="py-3 px-6">Symbol</th>
-        <th class="py-3 px-6">Acciones</th>
-        <th class="py-3 px-6">Precio</th>
-        <th class="py-3 px-6">Total</th>
-        <th class="py-3 px-6">Fecha</th>
-      </tr>
-    </thead>
-    <tbody class="text-white text-sm">
-      <td class="px-6 py-3 text-left">Vendido</td>
-      <td class="px-6 py-3">APPL</td>
-      <td class="px-6 py-3">233</td>
-      <td class="px-6 py-3">$12348</td>
-      <td class="px-6 py-3">$218309</td>
-      <td class="px-6 py-3">{date.toLocaleDateString()}</td>
-    </tbody>
-  </table>
+<article class="m-4 p-2 bg-gray-700 rounded-md">
+
+  
+  <section class="overflow-x-auto">
+    <table class="bg-gray-700 w-full text-center table-auto overflow-x-scroll">
+      <thead>
+        <tr class="bg-gray-700 text-center text-gray-400 uppercase text-sm">
+          <th class="py-3 px-6 text-left">Tipo</th>
+          <th class="py-3 px-6">Symbol</th>
+          <th class="py-3 px-6">Acciones</th>
+          <th class="py-3 px-6">Precio</th>
+          <th class="py-3 px-6">Total</th>
+          <th class="py-3 px-6">Fecha</th>
+        </tr>
+      </thead>
+      <tbody class="text-white text-sm">
+        <td class="px-6 py-3 text-left">Vendido</td>
+        <td class="px-6 py-3">APPL</td>
+        <td class="px-6 py-3">233</td>
+        <td class="px-6 py-3">$12348</td>
+        <td class="px-6 py-3">$218309</td>
+        <BuyDate/>
+      </tbody>
+    </table>
+  </section>
 </article>

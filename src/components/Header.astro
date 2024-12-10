@@ -1,12 +1,11 @@
 ---
 import { Cash } from "../services/svg";
-
-const date = new Date();
+import { Tiempo } from "../services/TIempo";
 const userBalance = 31297;
 ---
 <div class="flex w-full justify-between items-center">
   <div class="flex md:flex-row flex-col">
-    <Cash />
+    <Cash client:visible />
     <h1 class="text-2xl font-bold">Stock Market</h1>
   </div>
   <div class="space-y-1 text-right">
@@ -19,7 +18,7 @@ const userBalance = 31297;
     </div>
     <div class="flex md:flex-row text-right flex-col space-x-1">
       <p class="text-gray-400 text-sm">Última actualización:</p>
-      <p class="text-gray-400 text-sm">{date.toLocaleString()}</p>
+      <Tiempo client:load/>
     </div>
   </div>
 </div>
