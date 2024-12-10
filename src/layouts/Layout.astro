@@ -4,14 +4,16 @@ interface Props {
 }
 const { pageTitle } = Astro.props;
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>{pageTitle}</title>
-</head>
-<body class="bg-slate-800 text-white">
-	<slot/>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="bg-slate-800 text-white">
+    <slot />
+  </body>
 </html>

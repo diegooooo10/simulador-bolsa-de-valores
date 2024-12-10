@@ -1,4 +1,4 @@
-import { TrendingDown, TrendingUp } from "../components/svg";
+import { TrendingDown, TrendingUp } from "./svg";
 
 export const Change = ({ change }) => {
   const changeClass = change >= 0 ? "text-green-500" : "text-red-500";
