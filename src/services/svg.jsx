@@ -30,10 +30,10 @@ export const TrendingDown = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-trending-down"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-trending-down"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 7l6 6l4 -4l8 8" />
@@ -51,10 +51,10 @@ export const TrendingUp = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-trending-up"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-trending-up"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 17l6 -6l4 4l8 -8" />
@@ -71,10 +71,10 @@ export const TrendingUp2 = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-trending-up text-purple-600"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-trending-up text-purple-600"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M3 17l6 -6l4 4l8 -8" />
@@ -92,10 +92,10 @@ export const Pig = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-pig text-green-600"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-pig text-green-600"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M15 11v.01" />
@@ -113,10 +113,10 @@ export const Wallet = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-wallet text-blue-600"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-wallet text-blue-600"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12" />
@@ -134,10 +134,10 @@ export const ReturnArrow = () => {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left md:my-10 my-5 md:mx-8 mx-4"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-left md:my-10 my-5 md:mx-8 mx-4"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M5 12l14 0" />
