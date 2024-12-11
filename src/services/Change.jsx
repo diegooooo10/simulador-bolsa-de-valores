@@ -6,7 +6,7 @@ export const Change = ({ change }) => {
   return (
     <div className={`flex items-center justify-center ${changeClass}`}>
       <div className="mr-1 ">{changeIcon}</div>
-      <div>{change}%</div>
+      <div className="font-semibold">{change}%</div>
     </div>
   );
 };
